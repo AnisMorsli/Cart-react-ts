@@ -1,9 +1,9 @@
 import './products.css';
 import { ACTIONS } from '../../App';
+import { Link, useParams } from 'react-router-dom';
 
 function Products({ state, dispatch }: { state: any; dispatch: any }) {
   console.log(state);
-
   return (
     <div
       style={{
@@ -35,6 +35,7 @@ function Products({ state, dispatch }: { state: any; dispatch: any }) {
           >
             add to cart
           </button>
+          <Link to={`product/${index.id}`}>view Product</Link>
         </div>
       ))}
     </div>

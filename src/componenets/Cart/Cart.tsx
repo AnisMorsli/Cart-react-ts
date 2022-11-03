@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Cart({ state, dispatch }) {
+function Cart({ state, dispatch }: { state: any; dispatch: any }) {
   const { Cart } = state;
   return (
     <>
